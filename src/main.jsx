@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import News,{loader as NewsLoader} from './components/News';
+import News from './components/News';
 
 const something = createBrowserRouter([
   {
@@ -17,7 +17,6 @@ const something = createBrowserRouter([
       {
         path : "/",
         element : <News />,
-        loader : NewsLoader
       },
     ]
   },
