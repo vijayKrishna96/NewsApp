@@ -23,7 +23,9 @@ export async function loader() {
 
 function News() {
   const { newsData } = useLoaderData();
-  console.log(newsData);
+  const kv = useLoaderData();
+  const newData = kv?.newsData;
+  console.log(newData);
 
   return (
     <>
